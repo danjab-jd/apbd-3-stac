@@ -15,7 +15,8 @@
       "launchUrl": "swagger",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      }
+      },
+      "workingDirectory": "C:\\Users\\mrdef\\OneDrive\\Рабочий стол\\C#\\cwiczenia3_jd-Hurr1\\apbd-3-stac\\APBD3\\APBD3\\"
     },
     "APBD3": {
       "commandName": "Project",
