@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using System;
+﻿using APBD3.DTO;
+using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace APBD3.Controllers
 {
@@ -17,14 +15,20 @@ namespace APBD3.Controllers
 
 
         [HttpGet]
-        public IEnumerable<Student> GetStudentsList()
+        public IEnumerable<StudentDTO> GetStudentsList()
         {
             return null;
         }
 
+        [HttpPost]
+        public string AddStudent(StudentDTO studentDTO)
+        {
+            return "Student dodany";
+        }
+
         // GET: api/students/555
         [HttpGet("{indexNum}")]
-        public Student GetStudentByIndex(int indexNum)
+        public StudentDTO GetStudentByIndex(int indexNum)
         {
             return null;
         }
@@ -35,6 +39,13 @@ namespace APBD3.Controllers
         {
             // kolekcja.Remove(obj)
             return "Student usunięty";
+        }
+
+        // PUT: api/students/555
+        [HttpPut("{indexNum}")]
+        public string UpdateStudent(StudentDTO studentDTO)
+        {
+            return "Student zaktualizowany";
         }
 
     }
